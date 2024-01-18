@@ -1,13 +1,10 @@
 <script setup lang="ts">
-import 'xterm/css/xterm.css'
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloProfile.vue'
 </script>
 
 <template>
   <header>
     <div class="wrapper">
-      <!-- <HelloWorld /> -->
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
