@@ -8,14 +8,16 @@ import { RouterLink, RouterView } from 'vue-router'
 
       <div>
         <div style="font-size: 3rem;">
-          Hi, I'm 
+          <span style="color: var(--el-color-info)">
+            Hi, I'm
+          </span>
           <span style="text-wrap: nowrap; color: var(--el-color-success);">Marcello Bellomi</span>
         </div>
         <div>
           <el-text type="info" style="font-size: 2rem;">Architect and Developer</el-text>
         </div>
         <el-divider />
-        <div style="font-family: 'Handwriting', sans-serif; font-size: 2rem;">I'll strive to combine pragmatism and creativity every day to deliver cutting-edge solutions.</div>
+        <div style="font-size: 1.5rem; color: var(--el-color-info)">I'll strive to combine pragmatism and creativity every day to deliver cutting-edge solutions.</div>
       </div>
 
       <nav>

@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import SoftSkills from '../components/SoftSkills.vue';
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <SoftSkills />
   </main>
 </template>
