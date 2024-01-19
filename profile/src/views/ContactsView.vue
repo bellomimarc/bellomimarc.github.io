@@ -20,10 +20,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    margin-top: 1rem;
 }
 .contacts {
     display: flex;
     justify-content: space-around;
+    margin-top: 1rem;
 }
 
 .item {
