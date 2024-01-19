@@ -20,9 +20,9 @@ import { RouterLink, RouterView } from 'vue-router'
 
       <nav>
         <RouterLink to="/"><el-link type="primary">Home</el-link></RouterLink>
-        <RouterLink to="/about"><el-link type="primary">Work experience</el-link></RouterLink>
-        <RouterLink to="/about"><el-link type="primary">Skills</el-link></RouterLink>
-        <RouterLink to="/about"><el-link type="primary">Contacts</el-link></RouterLink>
+        <RouterLink to="/workexperience"><el-link type="primary">Work experience</el-link></RouterLink>
+        <RouterLink to="/skills"><el-link type="primary">Skills</el-link></RouterLink>
+        <RouterLink to="/contacts"><el-link type="primary">Contacts</el-link></RouterLink>
       </nav>
     </div>
   </header>
