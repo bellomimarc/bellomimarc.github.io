@@ -6,9 +6,23 @@ import { RouterLink, RouterView } from 'vue-router'
   <header>
     <div class="wrapper">
 
+      <div>
+        <div style="font-size: 3rem;">
+          Hi, I'm 
+          <span style="text-wrap: nowrap; color: var(--el-color-success);">Marcello Bellomi</span>
+        </div>
+        <div>
+          <el-text type="info" style="font-size: 2rem;">Architect and Developer</el-text>
+        </div>
+        <el-divider />
+        <div style="font-family: 'Handwriting', sans-serif; font-size: 2rem;">I'll strive to combine pragmatism and creativity every day to deliver cutting-edge solutions.</div>
+      </div>
+
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/"><el-link type="primary">Home</el-link></RouterLink>
+        <RouterLink to="/about"><el-link type="primary">Work experience</el-link></RouterLink>
+        <RouterLink to="/about"><el-link type="primary">Skills</el-link></RouterLink>
+        <RouterLink to="/about"><el-link type="primary">Contacts</el-link></RouterLink>
       </nav>
     </div>
   </header>
@@ -32,6 +46,9 @@ nav {
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 nav a.router-link-exact-active {
@@ -45,7 +62,6 @@ nav a.router-link-exact-active:hover {
 nav a {
   display: inline-block;
   padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
 }
 
 nav a:first-of-type {
