@@ -53,6 +53,8 @@ onMounted(() => {
 #softskills {
     width: 100%;
     height: 100%;
+    min-width: 100px;
+    min-height: 20rem;
     margin: 2rem auto;
 }
 </style>
