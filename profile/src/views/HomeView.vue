@@ -4,6 +4,8 @@ import SoftSkills from '../components/SoftSkills.vue';
 
 <template>
   <main>
-    <SoftSkills />
+    <div style="padding-top: 2rem;">
+      <SoftSkills />
+    </div>
   </main>
 </template>

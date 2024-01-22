@@ -46,6 +46,11 @@ const option = {
 
 onMounted(() => {
     echarts.init(document.getElementById('softskills')).setOption(option);
+
+    // if width or height changes, resize the chart accordingly
+    window.addEventListener('resize', () => {
+        echarts.init(document.getElementById('softskills')).resize();
+    });
 });
 </script>
 
@@ -55,6 +60,5 @@ onMounted(() => {
     height: 100%;
     min-width: 100px;
     min-height: 20rem;
-    margin: 2rem auto;
 }
 </style>
