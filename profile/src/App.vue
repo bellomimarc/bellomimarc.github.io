@@ -7,7 +7,7 @@ import { RouterLink, RouterView } from 'vue-router'
     <div class="wrapper">
 
       <div>
-        <div style="font-size: 3rem;">
+        <div style="font-size: 2.5rem;">
           <span style="color: var(--el-color-info)">
             Hi, I'm
           </span>
@@ -63,7 +63,7 @@ nav a.router-link-exact-active:hover {
 
 nav a {
   display: inline-block;
-  padding: 0 1rem;
+  padding: 0.3rem 1rem;
 }
 
 nav a:first-of-type {
