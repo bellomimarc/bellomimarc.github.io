@@ -1,9 +1,9 @@
 <template>
-    <div>
+    <el-scrollbar height="30rem">
         <div v-for="we in workExperiences" :key="we.company">
             <WorkExperienceComponent :workExperience="we" />
         </div>
-    </div>
+    </el-scrollbar>
 </template>
 
 <script setup lang="ts">
@@ -12,23 +12,33 @@ import WorkExperienceComponent from './WorkExperience.vue';
 
 const workExperiences: WorkExperience[] = [
     {
-        company: "CORVINA",
+        company: "Corvina",
         roles: [
             {
                 role: "Senior Full Stack Engineer",
                 startDate: new Date("2022-07-01"),
-                description: "Development of an application for remote management of cyber-physical systems. The software components I work on involve different languages (Javascript, Typescript, Java, Go), frameworks (Spring, VueJs, NestJs), storage (PostgreSQL, Redis, Elasticsearch, Cassandra), communication protocols (HTTP, WebSocket, MQTT), and a message broker RabbitMQ. The entire stack is deployed on Kubernetes using helm charts."
+                description: `I’m developing a microservice industrial IoT platform that helps customers to create dashboards and deploy new software on their devices.
+The microservices are using the following technologies: Typescript, Nodejs, Java, Go, Postgres, Redis, Elasticsearch, Rabbitmq, Cassandra and Vuejs.  All the services are dockerized and orchestrated by Kubernetes.
+I developed a marketplace inside Corvina and two applications:
+an OCI artifact registry based on Harbor
+an application that handles multiple NodeRED instances
+I also developed a documentation site using Docusaurus and an app template generator using Go.
+`
             }
         ]
     },
     {
-        company: "MILKMAN",
+        company: "Milkman",
         roles: [
             {
                 role: "Software Architect",
                 startDate: new Date("2020-08-01"),
                 endDate: new Date("2022-07-01"),
-                description: "Designing technical solutions to ensure scalability of Milkman software, deliberately inspired by Domain Driven Design and Event Sourcing. I have also worked on efficiency activities to reduce costs of the entire AWS cloud platform."
+                description: `I designed solutions that guarantee software scalability and transform the system into a multi-tenant platform.
+I also took care of the cost of the platform for each delivery.
+The whole infrastructure was on AWS and used the following services: S3, SQS, SNS, Lambda, Step Function, ECR, ECS Fargate, Redshift, DynamoDB, RDS, ElastiCache Redis, EC2, Cloudwatch. 
+The software was written with different languages (Node.js, Go, Java, Clojure), framework and storage.
+`
             }, 
             {
                 role: "Data Team Leader",
@@ -48,7 +58,7 @@ const workExperiences: WorkExperience[] = [
         ]
     },
     {
-        company: "E-TIME",
+        company: "E-Time",
         roles: [
             {
                 role: "Full Stack Developer",
@@ -61,7 +71,7 @@ const workExperiences: WorkExperience[] = [
         ]
     },
     {
-        company: "MARSH",
+        company: "Marsh",
         roles: [
             {
                 role: "Full Stack Developer",
