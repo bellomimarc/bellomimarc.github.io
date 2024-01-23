@@ -52,6 +52,32 @@ const workExperiences: WorkExperience[] = [
 - Communicator: microservice for managing SMS and email sending (NodeJs, Sequelize, MySql, Express)`
             }
         ]
+    },
+    {
+        company: "E-TIME",
+        roles: [
+            {
+                role: "Full Stack Developer",
+                startDate: new Date("2015-07-01"),
+                endDate: new Date("2017-06-01"),
+                description: `I have been the lead developer in the following projects:
+- YOUBUSINESS WEB: development of remote banking services using various technologies (.NET Framework, LINQ, WCF, Web Api, ASP.NET MVC, Bootstrap, LESS, jQuery, KnockoutJS, SammyJs)
+- ETM: personnel management system developed in NodeJs`
+            }
+        ]
+    },
+    {
+        company: "MARSH",
+        roles: [
+            {
+                role: "Full Stack Developer",
+                startDate: new Date("2013-08-01"),
+                endDate: new Date("2015-07-01"),
+                description: `Development of the following projects:
+- Integrated System: claims management for life insurance and medical expense reimbursement
+- myMarsh: interface for policyholders of life insurance and medical expense reimbursement policies Technologies used: Bootstrap, jQuery, .NET Framework, LINQ to SQL, TSQL.`
+            }
+        ]
     }
 ]
 
