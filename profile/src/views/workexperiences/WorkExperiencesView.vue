@@ -1,20 +1,14 @@
 <template>
     <div>
-        ciao
+        <div v-for="we in workExperiences" :key="we.company">
+            <WorkExperienceComponent :workExperience="we" />
+        </div>
     </div>
 </template>
 
 <script setup lang="ts">
-
-interface WorkExperience {
-    company: string;
-    roles: {
-        role: string;
-        startDate: Date;
-        endDate?: Date;
-        description: string;
-    }[];
-}
+import type { WorkExperience } from './WorkExperience';
+import WorkExperienceComponent from './WorkExperience.vue';
 
 const workExperiences: WorkExperience[] = [
     {
@@ -81,4 +75,4 @@ const workExperiences: WorkExperience[] = [
     }
 ]
 
-</script>
+</script>./WorkExperience
