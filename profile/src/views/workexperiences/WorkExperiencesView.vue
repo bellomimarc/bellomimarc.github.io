@@ -12,11 +12,28 @@ import WorkExperienceComponent from './WorkExperience.vue';
 
 const workExperiences: WorkExperience[] = [
     {
+        company: "Qomodo",
+        roles: [
+            {
+                role: "Software Architect",
+                startDate: new Date("2024-07-01"),
+                description: `Leading the software architecture at Qomodo, designing scalable
+and secure fintech solutions to transform how merchants and
+customers manage deferred payments. Responsible for strategic
+technology choices, infrastructure resilience, and technical
+mentoring for the engineering teams.
+As an individual contributor, I'm committed as Platform & Data
+Engineer.`
+            }
+        ]
+    },
+    {
         company: "Corvina",
         roles: [
             {
                 role: "Senior Full Stack Engineer",
                 startDate: new Date("2022-07-01"),
+                endDate: new Date("2024-07-01"),
                 description: `I’m developing a microservice industrial IoT platform that helps customers to create dashboards and deploy new software on their devices.
 The microservices are using the following technologies: Typescript, Nodejs, Java, Go, Postgres, Redis, Elasticsearch, Rabbitmq, Cassandra and Vuejs.  All the services are dockerized and orchestrated by Kubernetes.
 I developed a marketplace inside Corvina and two applications:
